@@ -7,16 +7,16 @@ var authRouter = require('./Router/RegistrationAndLogin/auth.js');
 var apiRouter = require('./Router/API/api.js');
 
 //import my custom middlewares
-const {simpleLogger,extendedLogger} = require("./CustomMiddlewares/simpleMiddlewere");
+const {simpleLogger,extendedLogger} = require("./CustomMiddlewares/simpleMiddleware");
 
 
 const PORT = 8000 || process.env.PORT;
 
 // make sure you set parsers before actual api calls
 
-// handeling incoming forms data
+// handling incoming forms data
 app.use(express.urlencoded({extended:false}));
-// handeling incoming json data
+// handling incoming json data
 app.use(express.json());
 
 
